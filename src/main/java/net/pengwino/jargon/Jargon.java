@@ -1,7 +1,8 @@
 package net.pengwino.jargon;
 
 import net.fabricmc.api.ModInitializer;
-// Sweet
+// Sweet test
+import net.pengwino.jargon.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,6 @@ public class Jargon implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }
