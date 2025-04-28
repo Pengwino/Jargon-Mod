@@ -10,6 +10,7 @@ import net.pengwino.jargon.Jargon;
 
 public class ModItems {
     public static final Item VOLCANIC_QUARTZ = registerItem("volcanic_quartz", new Item(new Item.Settings()));
+    public static final Item OBSIDIANSTEEL_INGOT = registerItem("obsidiansteel_ingot", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Jargon.MOD_ID, name), item);
@@ -20,6 +21,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
            fabricItemGroupEntries.add(VOLCANIC_QUARTZ);
+            fabricItemGroupEntries.add(OBSIDIANSTEEL_INGOT);
         });
     }
 }
