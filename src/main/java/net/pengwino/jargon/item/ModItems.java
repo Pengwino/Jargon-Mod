@@ -21,7 +21,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
            fabricItemGroupEntries.add(VOLCANIC_QUARTZ);
-            fabricItemGroupEntries.add(OBSIDIANSTEEL_INGOT);
+           fabricItemGroupEntries.add(OBSIDIANSTEEL_INGOT);
         });
     }
 }
